@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+build/
+dist/
+.env
+*.secret
+.qa/
+tools/github-*.mjs
+tools/docs-*.mjs
+tools/bootstrap_merge.py
+tools/cli_redirect.py
+*.zip
+characters/*/generated-originals/
+characters/*/previous-frames/

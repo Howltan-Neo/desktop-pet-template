@@ -1,0 +1,251 @@
+{
+  "schema_version": 1,
+  "id": "xiaoan",
+  "name": "小安",
+  "canvas": [
+    512,
+    512
+  ],
+  "theme": {
+    "accent": "#639AB0",
+    "ink": "#3A535E",
+    "muted": "#66808C",
+    "surface": "#CFDFE8",
+    "font": null
+  },
+  "actions": {
+    "idle": {
+      "label": "待机",
+      "frames": [
+        "frames/idle/00.png",
+        "frames/idle/01.png",
+        "frames/idle/02.png",
+        "frames/idle/03.png",
+        "frames/idle/04.png",
+        "frames/idle/05.png"
+      ],
+      "fps": 2,
+      "dialogue": [
+        "我在这里陪着你。"
+      ]
+    },
+    "run_right": {
+      "label": "向右跑",
+      "frames": [
+        "frames/run_right/00.png",
+        "frames/run_right/01.png",
+        "frames/run_right/02.png",
+        "frames/run_right/03.png",
+        "frames/run_right/04.png",
+        "frames/run_right/05.png",
+        "frames/run_right/06.png",
+        "frames/run_right/07.png"
+      ],
+      "fps": 2.38,
+      "dialogue": [
+        "我在这里陪着你。"
+      ]
+    },
+    "run_left": {
+      "label": "向左跑",
+      "frames": [
+        "frames/run_left/00.png",
+        "frames/run_left/01.png",
+        "frames/run_left/02.png",
+        "frames/run_left/03.png",
+        "frames/run_left/04.png",
+        "frames/run_left/05.png",
+        "frames/run_left/06.png",
+        "frames/run_left/07.png"
+      ],
+      "fps": 2.38,
+      "dialogue": [
+        "我在这里陪着你。"
+      ]
+    },
+    "wave": {
+      "label": "招手",
+      "frames": [
+        "frames/wave/00.png",
+        "frames/wave/01.png",
+        "frames/wave/02.png",
+        "frames/wave/03.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "嗨，见到你啦。",
+        "过来陪你一会儿。",
+        "今天也想陪着你。"
+      ]
+    },
+    "sad": {
+      "label": "失落",
+      "frames": [
+        "frames/sad/00.png",
+        "frames/sad/01.png",
+        "frames/sad/02.png",
+        "frames/sad/03.png",
+        "frames/sad/04.png",
+        "frames/sad/05.png",
+        "frames/sad/06.png",
+        "frames/sad/07.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "有点沮丧，抱抱。"
+      ]
+    },
+    "waiting": {
+      "label": "等待",
+      "frames": [
+        "frames/waiting/00.png",
+        "frames/waiting/01.png",
+        "frames/waiting/02.png",
+        "frames/waiting/03.png",
+        "frames/waiting/04.png",
+        "frames/waiting/05.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "我在等你呀。"
+      ]
+    },
+    "work": {
+      "label": "工作中",
+      "frames": [
+        "frames/work/00.png",
+        "frames/work/01.png",
+        "frames/work/02.png",
+        "frames/work/03.png",
+        "frames/work/04.png",
+        "frames/work/05.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "一起认真工作吧。",
+        "你忙你的，我在旁边陪你。"
+      ]
+    },
+    "thinking": {
+      "label": "沉思",
+      "frames": [
+        "frames/thinking/00.png",
+        "frames/thinking/01.png",
+        "frames/thinking/02.png",
+        "frames/thinking/03.png",
+        "frames/thinking/04.png",
+        "frames/thinking/05.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "让我想一想……"
+      ]
+    },
+    "look_direction": {
+      "label": "环视",
+      "frames": [
+        "frames/look_direction/00.png",
+        "frames/look_direction/01.png",
+        "frames/look_direction/02.png",
+        "frames/look_direction/03.png",
+        "frames/look_direction/04.png",
+        "frames/look_direction/05.png",
+        "frames/look_direction/06.png",
+        "frames/look_direction/07.png",
+        "frames/look_direction/08.png",
+        "frames/look_direction/09.png",
+        "frames/look_direction/10.png",
+        "frames/look_direction/11.png",
+        "frames/look_direction/12.png",
+        "frames/look_direction/13.png",
+        "frames/look_direction/14.png",
+        "frames/look_direction/15.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "我在看你呢。"
+      ]
+    },
+    "pet_front": {
+      "label": "摸头",
+      "frames": [
+        "frames/pet_front/00.png",
+        "frames/pet_front/01.png",
+        "frames/pet_front/02.png",
+        "frames/pet_front/03.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "唔……再摸一下嘛。",
+        "被你摸头，心情都软了。",
+        "这样陪着你，我很开心。"
+      ]
+    },
+    "hair_tug": {
+      "label": "拽发尾",
+      "frames": [
+        "frames/hair_tug/00.png",
+        "frames/hair_tug/01.png",
+        "frames/hair_tug/02.png",
+        "frames/hair_tug/03.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "哼，头发会乱的啦。",
+        "再拽就要你帮我梳好哦。"
+      ]
+    },
+    "wiggle": {
+      "label": "扭屁股",
+      "frames": [
+        "frames/wiggle/00.png",
+        "frames/wiggle/01.png",
+        "frames/wiggle/02.png",
+        "frames/wiggle/03.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "抓得到我吗？",
+        "嘿嘿，今天轮到我逗你啦。"
+      ]
+    }
+  },
+  "aliases": {
+    "pet_left": "pet_front",
+    "pet_right": "pet_front",
+    "pet_rub": "pet_front",
+    "fitness": "wiggle"
+  },
+  "hotzones": [
+    {
+      "rect": [
+        90,
+        20,
+        420,
+        260
+      ],
+      "action": "pet_front"
+    },
+    {
+      "rect": [
+        60,
+        261,
+        170,
+        375
+      ],
+      "action": "hair_tug"
+    }
+  ],
+  "interactions": {
+    "click": "wave",
+    "double_click": "wiggle",
+    "hold": "pet_front",
+    "keyboard": true,
+    "mouse_gaze": true,
+    "ambient": [
+      "waiting",
+      "thinking",
+      "wiggle"
+    ]
+  }
+}
