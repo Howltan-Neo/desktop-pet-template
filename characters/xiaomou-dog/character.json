@@ -1,0 +1,478 @@
+{
+  "schema_version": 1,
+  "id": "xiaomou-dog",
+  "name": "小狗哞",
+  "canvas": [
+    512,
+    512
+  ],
+  "theme": {
+    "accent": "#AB7736",
+    "ink": "#624528",
+    "muted": "#8D6D44",
+    "surface": "#E8CC97",
+    "font": null
+  },
+  "actions": {
+    "idle": {
+      "label": "待机",
+      "frames": [
+        "frames/idle/00.png",
+        "frames/idle/01.png",
+        "frames/idle/02.png",
+        "frames/idle/03.png",
+        "frames/idle/04.png"
+      ],
+      "fps": 2,
+      "dialogue": [
+        "我乖乖待在这里呀。",
+        "尾巴轻轻摇，等你看我。",
+        "你在旁边，我就很安心。",
+        "我会听话地陪着你。"
+      ]
+    },
+    "wave": {
+      "label": "招手",
+      "frames": [
+        "frames/wave/00.png",
+        "frames/wave/01.png",
+        "frames/wave/02.png",
+        "frames/wave/03.png",
+        "frames/wave/04.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "你回来啦！我在这里哦。",
+        "看到你了，尾巴摇起来啦！",
+        "可以跟你打个招呼吗？",
+        "我跑过来迎接你啦。"
+      ]
+    },
+    "pet_left": {
+      "label": "摸头左侧",
+      "frames": [
+        "frames/pet_left/00.png",
+        "frames/pet_left/01.png",
+        "frames/pet_left/02.png",
+        "frames/pet_left/03.png",
+        "frames/pet_left/04.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "左边也喜欢，尾巴摇起来啦。",
+        "左耳软软的，轻轻摸哦。",
+        "我往你的手心靠一点。",
+        "左边摸摸，我会乖乖的。"
+      ]
+    },
+    "pet_front": {
+      "label": "摸头前侧",
+      "frames": [
+        "frames/pet_front/00.png",
+        "frames/pet_front/01.png",
+        "frames/pet_front/02.png",
+        "frames/pet_front/03.png",
+        "frames/pet_front/04.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "唔……我低头乖乖让你摸。",
+        "眼睛眯起来啦，好舒服。",
+        "我把额头轻轻送过来。",
+        "摸头的时候，尾巴藏不住开心。"
+      ]
+    },
+    "pet_right": {
+      "label": "摸头右侧",
+      "frames": [
+        "frames/pet_right/00.png",
+        "frames/pet_right/01.png",
+        "frames/pet_right/02.png",
+        "frames/pet_right/03.png",
+        "frames/pet_right/04.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "右边也要，轻一点点呀。",
+        "右耳也被摸到啦，嘿嘿。",
+        "我把头往右边偏一点。",
+        "这边也暖暖的，我喜欢。"
+      ]
+    },
+    "pet_rub": {
+      "label": "轻揉头顶",
+      "frames": [
+        "frames/pet_rub/00.png",
+        "frames/pet_rub/01.png",
+        "frames/pet_rub/02.png",
+        "frames/pet_rub/03.png",
+        "frames/pet_rub/04.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "可以再靠近你一点吗？",
+        "揉揉头，我就不乱跑啦。",
+        "我乖乖站好，让你多摸一会儿。",
+        "尾巴已经偷偷摇起来啦。"
+      ]
+    },
+    "ear_left_01": {
+      "label": "拽左耳",
+      "frames": [
+        "frames/ear_left_01/00.png",
+        "frames/ear_left_01/01.png",
+        "frames/ear_left_01/02.png",
+        "frames/ear_left_01/03.png",
+        "frames/ear_left_01/04.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "咦？左边耳朵动啦。",
+        "左耳被轻轻拽住了？",
+        "唔，有一点点疼，慢慢来呀。",
+        "我歪歪头，再放开耳朵好不好？"
+      ]
+    },
+    "ear_right_01": {
+      "label": "拽右耳",
+      "frames": [
+        "frames/ear_right_01/00.png",
+        "frames/ear_right_01/01.png",
+        "frames/ear_right_01/02.png",
+        "frames/ear_right_01/03.png",
+        "frames/ear_right_01/04.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "咦？右边耳朵动啦。",
+        "右耳有点痒痒的。",
+        "轻一点哦，我会乖乖站好。",
+        "唔，右耳不小心抖了一下。"
+      ]
+    },
+    "tail_tug": {
+      "label": "揪尾巴",
+      "frames": [
+        "frames/tail_tug/00.png",
+        "frames/tail_tug/01.png",
+        "frames/tail_tug/02.png",
+        "frames/tail_tug/03.png",
+        "frames/tail_tug/04.png",
+        "frames/tail_tug/05.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "呀……轻一点点嘛。",
+        "尾巴被抓住啦，我回头看看。",
+        "有一点害羞，尾巴先放下来。",
+        "松开以后，我还能摇给你看。"
+      ]
+    },
+    "nuzzle": {
+      "label": "蹭蹭",
+      "frames": [
+        "frames/nuzzle/00.png",
+        "frames/nuzzle/01.png",
+        "frames/nuzzle/02.png",
+        "frames/nuzzle/03.png",
+        "frames/nuzzle/04.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "可以靠近你一点点吗？",
+        "让我轻轻蹭蹭你的手。",
+        "我只靠一会儿，很乖的。",
+        "你的手边最暖和啦。"
+      ]
+    },
+    "fitness": {
+      "label": "健身",
+      "frames": [
+        "frames/fitness/00.png",
+        "frames/fitness/01.png",
+        "frames/fitness/02.png",
+        "frames/fitness/03.png",
+        "frames/fitness/04.png",
+        "frames/fitness/05.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "我也会努力一点点！",
+        "举一下，再举一下！",
+        "练好了就能跑得更稳啦。",
+        "你在看我练习吗？尾巴摇摇。"
+      ]
+    },
+    "work": {
+      "label": "工作中",
+      "frames": [
+        "frames/work/00.png",
+        "frames/work/01.png",
+        "frames/work/02.png",
+        "frames/work/03.png",
+        "frames/work/04.png",
+        "frames/work/05.png"
+      ],
+      "fps": 1,
+      "dialogue": [
+        "我陪你认真一会儿。",
+        "我安静看着电脑，不捣乱。",
+        "这个想法要记下来，汪……唔。",
+        "你忙的时候，我会乖乖等。"
+      ]
+    },
+    "run_left": {
+      "label": "向左跑",
+      "frames": [
+        "frames/run_left/00.png",
+        "frames/run_left/01.png",
+        "frames/run_left/02.png",
+        "frames/run_left/03.png",
+        "frames/run_left/04.png"
+      ],
+      "fps": 2.38,
+      "dialogue": [
+        "等等我，我来啦！",
+        "左边也要跟紧你。",
+        "耳朵轻轻晃，我跑过来啦。",
+        "尾巴跟着脚步摇呀摇。"
+      ]
+    },
+    "run_right": {
+      "label": "向右跑",
+      "frames": [
+        "frames/run_right/00.png",
+        "frames/run_right/01.png",
+        "frames/run_right/02.png",
+        "frames/run_right/03.png",
+        "frames/run_right/04.png"
+      ],
+      "fps": 2.38,
+      "dialogue": [
+        "我跟着你呀。",
+        "右边有你，我就往右跑。",
+        "耳朵飘起来啦，等等我。",
+        "跑到你身边就停下。"
+      ]
+    },
+    "waiting": {
+      "label": "等待",
+      "frames": [
+        "frames/waiting/00.png",
+        "frames/waiting/01.png",
+        "frames/waiting/02.png",
+        "frames/waiting/03.png",
+        "frames/waiting/04.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "我会在这里等你的。",
+        "尾巴慢慢摆，等你回来。",
+        "我趴好啦，不会乱跑。",
+        "你一叫我，我就过来。"
+      ]
+    },
+    "sad": {
+      "label": "失落",
+      "frames": [
+        "frames/sad/00.png",
+        "frames/sad/01.png",
+        "frames/sad/02.png",
+        "frames/sad/03.png",
+        "frames/sad/04.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "有点想你了……",
+        "耳朵垂下来啦，你在哪儿？",
+        "我在这里安静等你哦。",
+        "等你回来，我再摇尾巴。"
+      ]
+    },
+    "thinking": {
+      "label": "沉思",
+      "frames": [
+        "frames/thinking/00.png",
+        "frames/thinking/01.png",
+        "frames/thinking/02.png",
+        "frames/thinking/03.png",
+        "frames/thinking/04.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "让我想想怎样让你开心。",
+        "歪歪头，今天玩什么好？",
+        "我在猜你的心情呀。",
+        "想好啦，先陪着你。"
+      ]
+    },
+    "look": {
+      "label": "环视",
+      "frames": [
+        "frames/look/00.png",
+        "frames/look/01.png",
+        "frames/look/02.png",
+        "frames/look/03.png",
+        "frames/look/04.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "我在偷偷找你呀。",
+        "左看看、右看看，你在这儿！",
+        "耳朵听见你的动静啦。",
+        "我找到你就安心了。"
+      ]
+    },
+    "sleep": {
+      "label": "睡大觉",
+      "frames": [
+        "frames/sleep/00.png",
+        "frames/sleep/01.png",
+        "frames/sleep/02.png",
+        "frames/sleep/03.png",
+        "frames/sleep/04.png",
+        "frames/sleep/05.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "呼……靠近一点好安心。",
+        "尾巴不摇了，我睡一小会儿。",
+        "鼻尖的泡泡又变大啦。",
+        "做梦也会想起你呀。"
+      ]
+    },
+    "stretch": {
+      "label": "伸懒腰",
+      "frames": [
+        "frames/stretch/00.png",
+        "frames/stretch/01.png",
+        "frames/stretch/02.png",
+        "frames/stretch/03.png",
+        "frames/stretch/04.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "伸伸手，等你来玩！",
+        "前爪伸直，尾巴也翘起来。",
+        "睡醒要先伸个懒腰。",
+        "我活动好啦，随时陪你。"
+      ]
+    },
+    "yawn": {
+      "label": "打哈欠",
+      "frames": [
+        "frames/yawn/00.png",
+        "frames/yawn/01.png",
+        "frames/yawn/02.png",
+        "frames/yawn/03.png",
+        "frames/yawn/04.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "唔……我还想陪你。",
+        "哈——耳朵都困得耷拉了。",
+        "先打个哈欠，不会睡太久。",
+        "靠近你就想安心地眯眼。"
+      ]
+    },
+    "look_direction": {
+      "label": "环视",
+      "frames": [
+        "frames/look_direction/00.png",
+        "frames/look_direction/01.png",
+        "frames/look_direction/02.png",
+        "frames/look_direction/03.png",
+        "frames/look_direction/04.png",
+        "frames/look_direction/05.png",
+        "frames/look_direction/06.png",
+        "frames/look_direction/07.png",
+        "frames/look_direction/08.png",
+        "frames/look_direction/09.png",
+        "frames/look_direction/10.png",
+        "frames/look_direction/11.png",
+        "frames/look_direction/12.png",
+        "frames/look_direction/13.png",
+        "frames/look_direction/14.png",
+        "frames/look_direction/15.png"
+      ],
+      "fps": 2,
+      "dialogue": [
+        "我在偷偷找你呀。",
+        "左看看、右看看，你在这儿！",
+        "耳朵听见你的动静啦。",
+        "我找到你就安心了。"
+      ]
+    }
+  },
+  "hotzones": [
+    {
+      "rect": [
+        351,
+        357,
+        497,
+        490
+      ],
+      "action": "tail_tug"
+    },
+    {
+      "rect": [
+        19,
+        111,
+        124,
+        249
+      ],
+      "action": "ear_left_01"
+    },
+    {
+      "rect": [
+        388,
+        111,
+        493,
+        249
+      ],
+      "action": "ear_right_01"
+    },
+    {
+      "rect": [
+        41,
+        26,
+        192,
+        215
+      ],
+      "action": "pet_left"
+    },
+    {
+      "rect": [
+        193,
+        26,
+        324,
+        215
+      ],
+      "action": "pet_front"
+    },
+    {
+      "rect": [
+        325,
+        26,
+        471,
+        215
+      ],
+      "action": "pet_right"
+    }
+  ],
+  "interactions": {
+    "click": "wave",
+    "double_click": "fitness",
+    "hold": "pet_rub",
+    "keyboard": true,
+    "mouse_gaze": true,
+    "ambient": [
+      "fitness",
+      "waiting",
+      "sleep",
+      "yawn",
+      "stretch",
+      "nuzzle"
+    ]
+  }
+}
