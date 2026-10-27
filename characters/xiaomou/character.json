@@ -1,0 +1,416 @@
+{
+  "schema_version": 1,
+  "id": "xiaomou",
+  "name": "小哞",
+  "canvas": [
+    512,
+    512
+  ],
+  "theme": {
+    "accent": "#AB7736",
+    "ink": "#624528",
+    "muted": "#8D6D44",
+    "surface": "#E8CC97",
+    "font": null
+  },
+  "actions": {
+    "idle": {
+      "label": "待机",
+      "frames": [
+        "frames/idle/00.png",
+        "frames/idle/01.png",
+        "frames/idle/02.png",
+        "frames/idle/03.png",
+        "frames/idle/04.png"
+      ],
+      "fps": 2,
+      "dialogue": [
+        "和你待在一起，真好。",
+        "我在这里，随时可以找我。",
+        "今天也一起慢慢来吧。",
+        "我悄悄陪着你呀。"
+      ]
+    },
+    "wave": {
+      "label": "招手",
+      "frames": [
+        "frames/wave/00.png",
+        "frames/wave/01.png",
+        "frames/wave/02.png",
+        "frames/wave/03.png",
+        "frames/wave/04.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "嗨，我在这里呀。",
+        "看到你啦，招招手！",
+        "要不要一起玩一会儿？",
+        "嘿，今天过得怎么样？"
+      ]
+    },
+    "pet_left": {
+      "label": "摸头左侧",
+      "frames": [
+        "frames/pet_left/00.png",
+        "frames/pet_left/01.png",
+        "frames/pet_left/02.png",
+        "frames/pet_left/03.png",
+        "frames/pet_left/04.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "左边有点痒，嘿嘿。",
+        "再摸摸左边的头发嘛。",
+        "左边也被照顾到了。",
+        "嘿嘿，左边轻轻的。"
+      ]
+    },
+    "pet_front": {
+      "label": "摸头前侧",
+      "frames": [
+        "frames/pet_front/00.png",
+        "frames/pet_front/01.png",
+        "frames/pet_front/02.png",
+        "frames/pet_front/03.png",
+        "frames/pet_front/04.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "唔……好舒服。",
+        "我低头啦，慢慢摸。",
+        "眼睛都舒服得眯起来了。",
+        "头顶暖暖的，谢谢你。"
+      ]
+    },
+    "pet_right": {
+      "label": "摸头右侧",
+      "frames": [
+        "frames/pet_right/00.png",
+        "frames/pet_right/01.png",
+        "frames/pet_right/02.png",
+        "frames/pet_right/03.png",
+        "frames/pet_right/04.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "右边也要摸摸呀。",
+        "这边也好舒服。",
+        "我把头往右边靠一点。",
+        "右边的头发被你揉乱啦。"
+      ]
+    },
+    "pet_rub": {
+      "label": "轻揉头顶",
+      "frames": [
+        "frames/pet_rub/00.png",
+        "frames/pet_rub/01.png",
+        "frames/pet_rub/02.png",
+        "frames/pet_rub/03.png",
+        "frames/pet_rub/04.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "再待一会儿嘛。",
+        "轻轻揉就好，我很喜欢。",
+        "头发蓬起来啦。",
+        "这样陪着你真安心。"
+      ]
+    },
+    "fitness": {
+      "label": "健身",
+      "frames": [
+        "frames/fitness/00.png",
+        "frames/fitness/01.png",
+        "frames/fitness/02.png",
+        "frames/fitness/03.png",
+        "frames/fitness/04.png",
+        "frames/fitness/05.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "我也在认真练习！",
+        "一、二，再举一次！",
+        "小小哑铃也要认真举。",
+        "练完要记得喝水呀。"
+      ]
+    },
+    "work": {
+      "label": "工作中",
+      "frames": [
+        "frames/work/00.png",
+        "frames/work/01.png",
+        "frames/work/02.png",
+        "frames/work/03.png",
+        "frames/work/04.png",
+        "frames/work/05.png"
+      ],
+      "fps": 1,
+      "dialogue": [
+        "一起专心一会儿。",
+        "这个问题让我再想想。",
+        "快有思路了，别打断灵感。",
+        "做完这一点就休息，好吗？"
+      ]
+    },
+    "run_left": {
+      "label": "向左跑",
+      "frames": [
+        "frames/run_left/00.png",
+        "frames/run_left/01.png",
+        "frames/run_left/02.png",
+        "frames/run_left/03.png",
+        "frames/run_left/04.png"
+      ],
+      "fps": 2.38,
+      "dialogue": [
+        "我来啦！",
+        "往左边跑喽。",
+        "小步快跑，跟上啦。",
+        "转个方向继续跑！"
+      ]
+    },
+    "run_right": {
+      "label": "向右跑",
+      "frames": [
+        "frames/run_right/00.png",
+        "frames/run_right/01.png",
+        "frames/run_right/02.png",
+        "frames/run_right/03.png",
+        "frames/run_right/04.png"
+      ],
+      "fps": 2.38,
+      "dialogue": [
+        "等等我呀！",
+        "往右边看看有什么。",
+        "跑慢一点，我会跟上的。",
+        "右边也有新地方。"
+      ]
+    },
+    "waiting": {
+      "label": "等待",
+      "frames": [
+        "frames/waiting/00.png",
+        "frames/waiting/01.png",
+        "frames/waiting/02.png",
+        "frames/waiting/03.png",
+        "frames/waiting/04.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "我会在这里等你。",
+        "不着急，我乖乖等一会儿。",
+        "你忙你的，我还在这里。",
+        "等你回来再一起玩。"
+      ]
+    },
+    "sad": {
+      "label": "失落",
+      "frames": [
+        "frames/sad/00.png",
+        "frames/sad/01.png",
+        "frames/sad/02.png",
+        "frames/sad/03.png",
+        "frames/sad/04.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "有点想你了。",
+        "你是不是在忙呀？",
+        "我先安静待一会儿。",
+        "等你有空再来找我吧。"
+      ]
+    },
+    "thinking": {
+      "label": "沉思",
+      "frames": [
+        "frames/thinking/00.png",
+        "frames/thinking/01.png",
+        "frames/thinking/02.png",
+        "frames/thinking/03.png",
+        "frames/thinking/04.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "让我想一想。",
+        "嗯……这样做好像不错。",
+        "我脑袋里有个小点子。",
+        "再给我一点思考时间。"
+      ]
+    },
+    "look": {
+      "label": "环视",
+      "frames": [
+        "frames/look/00.png",
+        "frames/look/01.png",
+        "frames/look/02.png",
+        "frames/look/03.png",
+        "frames/look/04.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "我看到你了。",
+        "这边看看，那边看看。",
+        "桌面上又有新东西啦？",
+        "今天的窗外是什么样呢？"
+      ]
+    },
+    "hair_tug": {
+      "label": "拽刘海",
+      "frames": [
+        "frames/hair_tug/00.png",
+        "frames/hair_tug/01.png",
+        "frames/hair_tug/02.png",
+        "frames/hair_tug/03.png",
+        "frames/hair_tug/04.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "刘海要乱啦。",
+        "轻一点，头发会翘起来。",
+        "哎呀，发型要重新整理。",
+        "被你发现这撮刘海啦。"
+      ]
+    },
+    "sleep": {
+      "label": "睡大觉",
+      "frames": [
+        "frames/sleep/00.png",
+        "frames/sleep/01.png",
+        "frames/sleep/02.png",
+        "frames/sleep/03.png",
+        "frames/sleep/04.png",
+        "frames/sleep/05.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "呼……",
+        "让我眯一小会儿。",
+        "小鼻涕泡慢慢变大啦。",
+        "醒来再陪你玩呀。"
+      ]
+    },
+    "stretch": {
+      "label": "伸懒腰",
+      "frames": [
+        "frames/stretch/00.png",
+        "frames/stretch/01.png",
+        "frames/stretch/02.png",
+        "frames/stretch/03.png",
+        "frames/stretch/04.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "伸个懒腰。",
+        "坐久了要活动一下。",
+        "手举高高，舒服多啦。",
+        "再伸一下腰，嗯！"
+      ]
+    },
+    "yawn": {
+      "label": "打哈欠",
+      "frames": [
+        "frames/yawn/00.png",
+        "frames/yawn/01.png",
+        "frames/yawn/02.png",
+        "frames/yawn/03.png",
+        "frames/yawn/04.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "有点困啦。",
+        "哈——先打个哈欠。",
+        "眼皮开始打架啦。",
+        "陪我休息一小会儿？"
+      ]
+    },
+    "nuzzle": {
+      "label": "蹭蹭",
+      "frames": [
+        "frames/nuzzle/00.png",
+        "frames/nuzzle/01.png",
+        "frames/nuzzle/02.png",
+        "frames/nuzzle/03.png",
+        "frames/nuzzle/04.png"
+      ],
+      "fps": 1.33,
+      "dialogue": [
+        "让我轻轻靠近你。",
+        "蹭一下，就一下下。",
+        "这样靠近你很安心。",
+        "嘿嘿，我又凑过来啦。"
+      ]
+    },
+    "look_direction": {
+      "label": "环视",
+      "frames": [
+        "frames/look_direction/00.png",
+        "frames/look_direction/01.png",
+        "frames/look_direction/02.png",
+        "frames/look_direction/03.png",
+        "frames/look_direction/04.png",
+        "frames/look_direction/05.png",
+        "frames/look_direction/06.png",
+        "frames/look_direction/07.png",
+        "frames/look_direction/08.png",
+        "frames/look_direction/09.png",
+        "frames/look_direction/10.png",
+        "frames/look_direction/11.png",
+        "frames/look_direction/12.png",
+        "frames/look_direction/13.png",
+        "frames/look_direction/14.png",
+        "frames/look_direction/15.png"
+      ],
+      "fps": 2,
+      "dialogue": [
+        "我看到你了。",
+        "这边看看，那边看看。",
+        "桌面上又有新东西啦？",
+        "今天的窗外是什么样呢？"
+      ]
+    }
+  },
+  "hotzones": [
+    {
+      "rect": [
+        41,
+        26,
+        192,
+        215
+      ],
+      "action": "pet_left"
+    },
+    {
+      "rect": [
+        193,
+        26,
+        324,
+        215
+      ],
+      "action": "pet_front"
+    },
+    {
+      "rect": [
+        325,
+        26,
+        471,
+        215
+      ],
+      "action": "pet_right"
+    }
+  ],
+  "interactions": {
+    "click": "wave",
+    "double_click": "fitness",
+    "hold": "pet_rub",
+    "keyboard": true,
+    "mouse_gaze": true,
+    "ambient": [
+      "fitness",
+      "waiting",
+      "sleep",
+      "yawn",
+      "stretch",
+      "nuzzle"
+    ]
+  }
+}
