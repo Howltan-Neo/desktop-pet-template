@@ -1,0 +1,31 @@
+name: Verify template
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - run: python -m unittest discover -s tests -v
+      - run: python run.py --pack characters/xiaoan --check
+      - run: python run.py --pack characters/xiaomou --check
+      - run: python run.py --pack characters/xiaomou-dog --check
+      - run: python tools/render_preview.py characters/xiaoan .qa/ui/xiaoan
+      - run: python tools/render_preview.py characters/xiaomou .qa/ui/xiaomou
+      - run: python tools/smoke_windows.py characters/xiaoan .qa/smoke/xiaoan
+      - run: python tools/smoke_windows.py characters/xiaomou .qa/smoke/xiaomou
+      - run: python tools/smoke_windows.py characters/xiaomou-dog .qa/smoke/xiaomou-dog
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: windows-verification
+          path: .qa/
+          retention-days: 7
