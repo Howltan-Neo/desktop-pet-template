@@ -93,6 +93,17 @@ def validate(root: Path, *, check_files: bool = True) -> dict:
     if not isinstance(messages,dict) or any(not isinstance(v,str) for v in messages.values()):
         errors.append("messages must be an object of strings")
     checked = 0
+    cursors = doc.get("cursors", {})
+    if not isinstance(cursors,dict):
+        errors.append("cursors must be an object")
+        cursors = {}
+    for key,value in cursors.items():
+        try:
+            path = path_in_pack(value)
+            if key not in ("head", "head_pressed", "body") or path.suffix.lower() != ".cur" or (check_files and not path.is_file()):
+                errors.append(f"cursors.{key} must name an existing .cur file")
+        except (ValueError,OSError) as exc:
+            errors.append(f"cursors.{key}: {exc}")
     for name, action in actions.items():
         if not isinstance(name, str) or not re.fullmatch(r"[a-z][a-z0-9_]*", name) or not isinstance(action, dict):
             errors.append(f"invalid action: {name}")

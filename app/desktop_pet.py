@@ -95,7 +95,20 @@ def settings_save(values: dict) -> None:
 
 
 def prepare_cursor_specs():
-    return {"head": "hand2", "head_pressed": "hand2", "body": "hand2"}
+    shared = Path(getattr(sys, "_MEIPASS", Path(__file__).resolve().parent)) / "assets"
+    folder = CONFIG.parent / "cursors"
+    folder.mkdir(parents=True, exist_ok=True)
+    result = {}
+    for kind in ("head", "head_pressed", "body"):
+        configured = PACK.data.get("cursors", {}).get(kind)
+        source = PACK.path(configured) if configured else shared / (kind + ".cur")
+        if source.is_file():
+            target = folder / (kind + ".cur")
+            shutil.copyfile(source, target)
+            result[kind] = "@" + target.as_posix()
+        else:
+            result[kind] = "hand2"
+    return result
 
 def acquire_instance():
     if os.name != "nt":
